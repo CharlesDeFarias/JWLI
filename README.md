@@ -3,6 +3,8 @@ This website was recreated from a PDF image of an existing site that's no longer
 
 ![screenshot of JWLI site](images/site-screenshot.png)
 
+Demo-site: https://charlesdefarias.github.io/JWLI/
+
 ## How It's Made:
 
 **Tech used:** HTML, CSS
@@ -14,4 +16,4 @@ There's a lot I still want to do to this site to be satisfied with it. Many sect
 
 ## Lessons Learned:
 
-This was my first time using Media Queries on a website I had already created. It was surprisingly easier to do than expected but it was still a fun challenge and there's a lot of work i need to do to make my responsiveness fluid and concise. 
+This was my first time using Media Queries on a website I had already created. It was surprisingly easier to do than expected but it was still a fun challenge and there's a lot of work I need to do to make my responsiveness fluid and concise.
