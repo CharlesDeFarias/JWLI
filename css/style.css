@@ -1,0 +1,627 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  width: 80%;
+  margin: auto;
+  font-size: 17px;
+}
+ul li, ul, ul li ul, header li{
+ float: left;
+ list-style: none;
+}
+section{
+  float:left;
+}
+header{
+  width: 100%;
+  float: left; /* Why did I have to float this to get the JWLI logo section to move down? */
+  clear: both;
+}
+header nav ul{
+  width: 100%;
+  font-size: 1.25em;
+}
+header nav li{
+  margin: .5em 3%;
+  background-color: white;
+}
+header nav li:last-of-type{
+  margin-right: 0;
+  margin-left: 5%;
+} /* better way of doing this? */
+header nav li a{
+text-decoration: none;
+color: black;
+}
+nav li:first-of-type{
+  display: none;
+}
+header nav ul li:last-of-type a{/* I got this from https://css-tricks.com/examples/ButtonMaker */
+   border-top: 1px solid #000000;
+   background: #000000;
+   background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#000000));
+   background: -webkit-linear-gradient(top, #000000, #000000);
+   background: -moz-linear-gradient(top, #000000, #000000);
+   background: -ms-linear-gradient(top, #000000, #000000);
+   background: -o-linear-gradient(top, #000000, #000000);
+   padding: 6.5px 13px;
+   -webkit-border-radius: 0px;
+   -moz-border-radius: 0px;
+   border-radius: 0px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: #ffffff;
+   font-size: 13px;
+   font-family: Georgia, serif;
+   text-decoration: none;
+   vertical-align: middle;
+   margin-right: 0;
+   }
+header nav ul li a:hover {
+   border-top-color: #ffffff;
+   background: #ffffff;
+   color: #ccc;
+   }
+header nav ul li a:active {
+   border-top-color: #000000;
+   background: #000000;
+   }
+}
+header + section, header + section + section + section{
+  background-color: #F1F3F5;
+}
+.one{
+  padding-left: 3%;
+  padding-top: 2em;
+  margin: 0;
+  width: 45%;
+  float: left;
+  background-color: #F1F3F5;
+  height: 22em;
+}
+.one img{
+  padding-left: 15%;
+}
+.one h1{
+  font-size: 1.5em;
+}
+.one span{
+  margin-top: 2em;
+  font-size: .75em;
+  margin-bottom: 0;
+  width: 100%;
+}
+.one a{
+   border-top: 1px solid black;
+   background: #b8c5cf;
+    background: -webkit-gradient(linear, left top, leftbottom, from(#b8c5cf), to(#b8c5cf));
+    background: -webkit-linear-gradient(top, #b8c5cf,#b8c5cf);
+    background: -moz-linear-gradient(top, #b8c5cf,#b8c5cf);
+    background: -ms-linear-gradient(top, #b8c5cf,#b8c5cf);
+    background: -o-linear-gradient(top, #b8c5cf, #b8c5cf);
+    padding: 3px 12px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+    -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+    box-shadow: rgba(0,0,0,1) 0 1px 0;
+    text-shadow: rgba(0,0,0,.4) 0 1px 0;
+    color: white;
+    font-size: 1.05em;
+    font-family: Georgia, serif;
+    text-decoration: none;
+    vertical-align: middle;
+    width: 30%;
+}
+.one a:hover {
+    border-top-color: #ffffff;
+    background: #ffffff;
+    color: #000000;
+}
+.one a:active {
+  border-top-color: #b8c5cf;
+  background: #b8c5cf;
+}
+.oneA{
+  width: 55%;
+  float: left;
+  height: 22em;
+  overflow: hidden;
+}
+.oneA img{
+  width: 100%;
+}
+.oneA + section{ /* Not centering how I want. Had to use margin-left. */
+  width: 80%;
+  padding: 4%;
+  margin-left: 12%;
+  text-align: center;
+  height: 21em;
+}
+.oneA + section h2{
+  margin-bottom: 0;
+  margin-top:0;
+}
+
+.oneA + section p{
+  color: gray;
+  font-size: .8em;
+  padding-top: 2%;
+}
+.oneA + section > section{
+  width: 42%;
+  margin: 1em 4%;
+  float: left;
+  text-align: left;
+  font-size: 1.5em;
+}
+.oneA + section > section p{
+  color: black;
+}
+.oneA + section > section span{
+  text-decoration: overline double;
+  text-decoration-color: #ffddf0;
+  font-weight: bold;
+}
+.four, .four + section{
+  background-color: #F1F3F5;
+  height: 26em;
+  }
+.four {
+  width: 65%;
+  padding: 2%;
+  text-align: left;
+}
+.four h2{
+  margin-top: 0;
+}
+.four + section{
+  width: 35%;
+  text-align: center;
+  padding-top: 2em;
+}
+.four + section span{
+  color: gray;
+  float: left;
+  width: 100%;
+}
+.four + section img{
+  width: 70%;
+  max-height: 10em;
+  text-align: center;
+  padding: 2%;
+  vertical-align: middle;
+  float: left;
+  margin-left: 16%;
+}
+.four + section + section{
+  text-align: center;
+  width: 100%;
+  padding: 5%;
+  padding-top: 1%;
+}
+.seven + section{
+  text-align: left;
+  width: 50%;
+  height: 17em;
+}
+.seven > section { /* once again had to use margin-left to center */
+  width: 90%;
+  border: .5px solid gray;
+  margin-left: 6%;
+}
+.seven > section img{
+  float: left;
+  display: inline-block;
+  margin: 1%;
+  margin-top: 4%;
+}
+.seven > section p, h3{
+  display: inline-block;
+  width: 58%;
+  text-align: left;
+  margin-bottom: 0;
+  }
+.seven + section, .seven + section + section{
+  float: left;
+  width: 50%;
+  height: 15em;
+  padding: 0 2% 8% 2%;
+}
+.seven + section + section img{
+  height: 3.25em;
+  width: auto;
+}
+.seven + section + section + section{
+  width: 100%;
+  background-color: #b8c5d0;
+  vertical-align: middle;
+  padding-left: 10%;
+  font-size: 1.5em;
+  color: white;
+}
+.seven + section + section + section input{
+  width: 33%;
+  margin-left: 21%;
+  vertical-align: center;
+  margin-top: .25%;
+  height: 1.2em;
+}
+.seven + section + section + section a{/* got from the website i used before. Starting to really not like it. */
+   border: 1px solid #8f9ca3;
+   background: -webkit-gradient(linear, left top, left bottom, from(#8f9ca3), to(#8f9ca3));
+   background: -webkit-linear-gradient(top, #8f9ca3, #8f9ca3);
+   background: -moz-linear-gradient(top, #8f9ca3, #8f9ca3);
+   background: -ms-linear-gradient(top, #8f9ca3, #8f9ca3);
+   background: -o-linear-gradient(top, #8f9ca3, #8f9ca3);
+   padding: .4% .4%;
+   -webkit-border-radius: 0px;
+   -moz-border-radius: 0px;
+   border-radius: 0px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: .7em;
+   font-family: Georgia, serif;
+   text-decoration: none;
+   vertical-align: middle;
+   float: right;
+   margin-right: 10%;
+   }
+.seven + section + section + section a:hover {
+   border-top-color: #ffffff;
+   background: #ffffff;
+   color: #000000;
+   }
+.seven + section + section + section a:active {
+   border-top-color: #b8c5cf;
+   background: #b8c5cf;
+}
+.seven + section + section + section + section{
+  width: 100%;
+  background-color: #8f9ca3;
+  color: white;
+}
+.seven + section + section + section + section ul{
+  width: 100%;
+  height: 1em;
+}
+.seven + section + section + section + section li{
+  float: left;
+  margin: 0% .5%;
+}
+.seven + section + section + section + section li:first-of-type{
+  margin: 0% 7%;
+  margin-right: 45%;
+}
+footer{
+  width: 100%;
+  height: auto;
+  background-color: #8f9ca3;
+  color: white;
+  float: left;
+  padding: 1% 5%;
+}
+Footer > section{
+  width: 100%;
+  padding-right: 0;
+  border-top: 1px solid white;
+}
+footer > ul{
+  width: 50%;
+  float: left;
+}
+footer a{
+  text-decoration: none;
+  color: white;
+}
+footer + ul > li {
+  float: left;
+  margin: 0% 5%;
+}
+footer ul li ul {
+  margin: 2% 10%;
+  height: auto;
+}
+footer ul li ul li{
+  float: none;
+}
+footer > ul + ul li{
+  margin-right: 12%;
+}
+footer > ul + ul{
+  padding-left: 5%;
+}
+footer section ul:last-of-type{
+  width: 50%;
+  margin-left: 5%;
+}
+footer section ul:last-of-type li{
+  margin-left: 16%;
+}
+.rightFooter{
+  padding-top: 1em;
+}
+@media only screen and (max-width: 768px){
+  .hideMobile{
+    display: none;
+  }
+  nav ul{
+    text-align: center;
+    margin-left: 20%;
+  }
+  nav li:first-of-type{
+    display: block;
+    color black;
+  }
+  nav li:not(:first-of-type){
+    display: none;
+  }
+  nav li:last-of-type{
+    display: block;
+  }
+  .one{
+    padding-left: 3%;
+    padding-top: 1em;
+    margin: 0;
+    width: 45%;
+    float: left;
+    background-color: #F1F3F5;
+    height: 22em;
+    width: 100%;
+    text-align: center;
+  }
+  .one img{
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .one h1{
+    font-size: 1.5em;
+    margin-bottom: .5em;
+    margin-top: .05em;
+  }
+  .one p{
+    margin-bottom: 0;
+  }
+  .one span{
+    font-size: .75em;
+    margin-bottom: 0.2%;
+    margin-top: 1em;
+    width: 100%;
+    display: inline-block;
+  }
+  .oneA + section{
+    margin:0;
+    width: 100%;
+    padding: 0;
+    height: 24em;
+  }
+  .oneA + section > section{
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+  }
+  .four + section{
+    display: none;
+  }
+  .four{
+    width: 100%;
+    height: 51em;
+  }
+  .four h2{
+    text-align: center;
+  }
+  .seven{
+    width: 100%;
+    padding: 0;
+    float: left;
+  }
+  .seven > section{
+    width: 100%;
+    margin-left: 0;
+    padding:0;
+    border: none;
+  }
+  .seven > section p, h3 {
+    width: 100%;
+    margin: 3%;
+  }
+  .seven > section img{
+    display: none;
+  }
+  .seven + section, .seven + section + section{
+    width: 100%;
+    text-align: center;
+    float: left;
+    height: 18em;
+  }
+  .seven + section h3{
+    text-align: center;
+  }
+  .seven + section + section + section input{
+    width: 67%;
+    margin-left: 0;
+  }
+  .seven + section + section + section + section li:first-of-type{
+    width: 100%;
+    margin-left: 0;
+  }
+  footer section ul:last-of-type {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  footer ul li{
+    width: 22%;
+    float: left;
+    margin-right: 2%;
+    margin-left: 0;
+  }
+  footer section ul:last-of-type li{
+    margin-left: 0;
+  }
+  .seven + section + section + section + section ul{
+    padding-left: 0;
+    margin-bottom: .5em;
+    margin-top: .5em;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+  header{
+    padding-left: 11%;
+  }
+  .one{
+    padding-left: 3%;
+    padding-top: 1em;
+    margin: 0;
+    width: 45%;
+    float: left;
+    background-color: #F1F3F5;
+    height: 18.5em;
+    width: 100%;
+    text-align: center;
+  }
+  .one img{
+    padding-left: 10%;
+    padding-right: 10%;
+    max-width: 100%;
+  }
+  .one h1{
+    font-size: 1.5em;
+    margin-bottom: .5em;
+    margin-top: .05em;
+  }
+  .one p{
+    margin-bottom: 0;
+  }
+  .one span{
+    font-size: .75em;
+    margin-bottom: 0.2%;
+    margin-top: 1em;
+    width: 100%;
+    display: inline-block;
+  }
+  .oneA + section{
+    margin-left: 0;
+    width: 100%;
+  }
+  .oneA + section>p{
+    float: left;
+  }
+  header nav ul{
+    padding-left: 0;
+  }
+  header nav li{
+    margin: .3em 1%;
+  }
+  .oneA, .four + section, .hideTablet{
+    display: none;
+  }
+  .four{
+    width: 100%;
+    height: 30em;
+  }
+  .seven > section{
+    margin-left: 0;
+    width: 100%;
+  }
+  .seven > section p{
+    width: 97%;
+  }
+  .seven > section h3{
+    text-align: center;
+    width: 97%
+  }
+  .seven > section img{
+    margin-left: 20%;
+  }
+  .seven + section, .seven + section + section{
+    height: 20em;
+  }
+  .seven + section + section + section input {
+    margin-left: 10%;
+    width: 50%;
+      }
+  .seven + section + section + section a{
+    margin-right: 27%;
+  }
+  footer > section{
+    padding-left: 3%;
+  }
+.seven + section + section + section + section li:first-of-type{
+  width: 57%;
+  margin:0;
+}
+.seven + section + section + section + section .hideMobile{
+  font-size: .8em
+}
+}
+@media only screen and (min-width: 1025px) and (max-width: 2000px){
+header nav ul{
+  padding-left: 0;
+}
+header nav ul li{
+  margin-right: 1%;
+}
+.one{
+  padding-top: 0;
+}
+.one span{
+  margin-right: 50%;
+}
+.oneA img{
+  height: 23em;
+}
+.one, .oneA{
+  height: 23em;
+}
+.four, .four + section {
+  height: 35em;
+}
+.four + section img{
+  max-height: 100em;
+  height: 15em;
+}
+.seven > section img{
+  width: 38%;
+}
+.seven + section + section + section input {
+  margin-left: 5%;
+}
+.seven + section + section + section a{
+  float: none;
+}
+.seven + section + section + section + section ul{
+  margin-bottom: .1em;
+}
+.seven + section + section + section + section li:first-of-type{
+  margin-right: 20%;
+}
+footer section ul:last-of-type{
+  width: 35%;
+  margin: 0;
+  padding-left: 0;
+}
+footer section ul:last-of-type ul{
+  width: 33%;
+  margin: 0;
+  padding-left: 0;
+}
+footer section ul:last-of-type li{
+margin-left: 5%;
+}
+footer section > ul:first-of-type{
+  width: 65%;
+  padding-left: 0;
+}
+footer section > ul ul{
+  padding-left: 0%;
+}
+}
